@@ -1,3 +1,4 @@
+/*
 Console.Write("Digite o nome do cliente: ");
 string cliente = Console.ReadLine()!;
 
@@ -20,4 +21,4 @@ double valorFinal = valorCompra - desconto;
 Console.WriteLine($"Cliente: {cliente}");
 Console.WriteLine($"Valor da compra: R$ {valorCompra:F2}");
 Console.WriteLine($"Desconto: R$ {desconto:F2}");
-Console.WriteLine($"Valor final: R$ {valorFinal:F2}");
+Console.WriteLine($"Valor final: R$ {valorFinal:F2}");*/
