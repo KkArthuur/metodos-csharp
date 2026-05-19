@@ -7,60 +7,86 @@ na última linha do código chame a função Menu();
 
 */
 
-
-       
-double numero1;
-double numero2;
-double resultado = 0;
-string opcao;
-string continuar = "s";
-
-while (continuar == "s" || continuar == "S")
+/*static void ExecutarCalculadora()
+{
+    Thread.Sleep(2000);
+    double n1;
+    double n2;
+    double resultado = 0;
+    string opcao;
+    bool continuar = true;
+    while (continuar == true)
     {
-        Console.Clear();
-        Console.WriteLine("=== CALCULADORA ===");
-        Console.WriteLine("+ Soma");
-        Console.WriteLine("- Subtração");
-        Console.WriteLine("* Multiplicação");
-        Console.WriteLine("/ Divisão");
-        Console.Write("Escolha uma opção: ");
-        opcao = Console.ReadLine()!;
+        static string Menu()
+        {
+            Console.Clear();
+            Console.WriteLine("=== CALCULADORA ===");
+            Console.WriteLine("+ Soma");
+            Console.WriteLine("- Subtração");
+            Console.WriteLine("* Multiplicação");
+            Console.WriteLine("/ Divisão");
+            Console.Write("Escolha uma opção: ");
+            string operacao = Console.ReadLine()!;
+            return operacao;
+
+        }
+        opcao = Menu();
+
+
 
         Console.Write("Digite o primeiro número: ");
-        numero1 = double.Parse(Console.ReadLine()!);
+        n1 = double.Parse(Console.ReadLine()!);
 
         Console.Write("Digite o segundo número: ");
-        numero2 = double.Parse(Console.ReadLine()!);
+        n2 = double.Parse(Console.ReadLine()!);
 
-        if (opcao == "+")
+        static void Calcular(string opcao, double n1, double n2, double resultado)
         {
-            resultado = numero1 + numero2;
-            Console.WriteLine($"Resultado da soma: {resultado}");
+            if (opcao == "+")
+            {
+                resultado = n1 + n2;
+                Console.WriteLine($"Resultado da soma: {resultado}");
+            }
+            else if (opcao == "-")
+            {
+                resultado = n1 - n2;
+                Console.WriteLine($"Resultado da subtração: {resultado}");
+            }
+            else if (opcao == "*")
+            {
+                resultado = n1 * n2;
+                Console.WriteLine($"Resultado da multiplicação: {resultado}");
+            }
+            else if (opcao == "/")
+            {
+                resultado = n1 / n2;
+                Console.WriteLine($"Resultado da divisão: {resultado}");
+            }
+            else
+            {
+                Console.WriteLine("Opção inválida.");
+            }
         }
-        else if (opcao == "-")
+        Calcular(opcao, n1, n2, resultado);
+        static bool Continuar()
         {
-            resultado = numero1 - numero2;
-            Console.WriteLine($"Resultado da subtração: {resultado}");
+            Console.WriteLine();
+            Console.Write("Deseja fazer outro cálculo? (s/n): ");
+            string opcao = Console.ReadLine()!;
+            if (opcao == "s" || opcao == "S")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
-        else if (opcao == "*")
-        {
-            resultado = numero1 * numero2;
-            Console.WriteLine($"Resultado da multiplicação: {resultado}");
-        }
-        else if (opcao == "/")
-        {
-            resultado = numero1 / numero2;
-            Console.WriteLine($"Resultado da divisão: {resultado}");
-        }
-        else
-        {
-            Console.WriteLine("Opção inválida.");
-        }
-
-    Console.WriteLine();
-    Console.Write("Deseja fazer outro cálculo? (s/n): ");
-    continuar = Console.ReadLine()!;
+        continuar = Continuar();
+    }
 }
-
+ExecutarCalculadora();
+Thread.Sleep(1000);
+Console.Clear();
 Console.Write("Fim de programa!!");
-
+*/
