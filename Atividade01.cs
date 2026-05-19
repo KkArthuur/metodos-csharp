@@ -5,6 +5,12 @@ informar se o aluno foi aprovado, ficou em recuperação ou foi reprovado.
 
 Código iniciado, o método LerNota ( ) é chamado, ele leva a string como mensagem 9Nota 1:; Nota 2: ...
 */
+/*static string LerNomeAluno()
+{
+    Console.Write("Digite o nome do Aluno: ");
+    string nome = Console.ReadLine()!;
+    return nome;
+}
 
 static double LerNota(string mensagem)
 {
@@ -13,8 +19,33 @@ static double LerNota(string mensagem)
 
     return nota;
 }
-
-
+static double CalcularMedia(double nota1, double nota2, double nota3)
+{
+    double media = (nota1 + nota2 + nota3) / 3;
+    return media;
+}
+static string VerificarSituacao(double media)
+{
+    if (media >= 7)
+    {
+        return "Aprovado";
+    }
+    else if (media >= 5 && media < 7)
+    {
+        return "Em Recuperação";
+    }
+    else
+    {
+        return "Reprovado";
+    }
+}
+static void ExibirResultado(string nome, double media, string situacao)
+{
+    Console.WriteLine("");
+    Console.WriteLine($"Nome do Aluno: {nome}");
+    Console.WriteLine($"Media do Aluno: {media}");
+    Console.WriteLine($"Situação do Aluno: {situacao}");
+}
 static void ExecutarSistema()
 {
     string nome = LerNomeAluno();
@@ -30,4 +61,4 @@ static void ExecutarSistema()
     ExibirResultado(nome, media, situacao);
 }
 
-ExecutarSistema();
+ExecutarSistema();*/
